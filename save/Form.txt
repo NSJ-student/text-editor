@@ -1,0 +1,356 @@
+﻿namespace Server_Program
+{
+    partial class ServerForm
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.tcTab = new System.Windows.Forms.TabControl();
+            this.tpChatLog = new System.Windows.Forms.TabPage();
+            this.lbChatLog = new System.Windows.Forms.ListBox();
+            this.plMsg = new System.Windows.Forms.Panel();
+            this.lblId = new System.Windows.Forms.Label();
+            this.txtMsg = new System.Windows.Forms.TextBox();
+            this.txtId = new System.Windows.Forms.MaskedTextBox();
+            this.lblMsg = new System.Windows.Forms.Label();
+            this.btnSend = new System.Windows.Forms.Button();
+            this.tpClients = new System.Windows.Forms.TabPage();
+            this.lvConn = new System.Windows.Forms.ListView();
+            this.chId = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.chId_Char = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.chIp = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.chTime = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.tpInfo = new System.Windows.Forms.TabPage();
+            this.rtbInfo = new System.Windows.Forms.RichTextBox();
+            this.tsToolSctip = new System.Windows.Forms.ToolStrip();
+            this.btnServer = new System.Windows.Forms.ToolStripButton();
+            this.btnSet = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.btnSaveLog = new System.Windows.Forms.ToolStripButton();
+            this.btnLoadLog = new System.Windows.Forms.ToolStripButton();
+            this.btnSetDate = new System.Windows.Forms.ToolStripButton();
+            this.tcTab.SuspendLayout();
+            this.tpChatLog.SuspendLayout();
+            this.plMsg.SuspendLayout();
+            this.tpClients.SuspendLayout();
+            this.tpInfo.SuspendLayout();
+            this.tsToolSctip.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // tcTab
+            // 
+            this.tcTab.Controls.Add(this.tpChatLog);
+            this.tcTab.Controls.Add(this.tpClients);
+            this.tcTab.Controls.Add(this.tpInfo);
+            this.tcTab.Location = new System.Drawing.Point(12, 35);
+            this.tcTab.Name = "tcTab";
+            this.tcTab.SelectedIndex = 0;
+            this.tcTab.Size = new System.Drawing.Size(474, 542);
+            this.tcTab.TabIndex = 0;
+            // 
+            // tpChatLog
+            // 
+            this.tpChatLog.Controls.Add(this.lbChatLog);
+            this.tpChatLog.Controls.Add(this.plMsg);
+            this.tpChatLog.Location = new System.Drawing.Point(4, 22);
+            this.tpChatLog.Name = "tpChatLog";
+            this.tpChatLog.Padding = new System.Windows.Forms.Padding(3);
+            this.tpChatLog.Size = new System.Drawing.Size(466, 516);
+            this.tpChatLog.TabIndex = 1;
+            this.tpChatLog.Text = "채팅방";
+            this.tpChatLog.UseVisualStyleBackColor = true;
+            // 
+            // lbChatLog
+            // 
+            this.lbChatLog.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lbChatLog.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbChatLog.FormattingEnabled = true;
+            this.lbChatLog.ItemHeight = 12;
+            this.lbChatLog.Location = new System.Drawing.Point(3, 3);
+            this.lbChatLog.Name = "lbChatLog";
+            this.lbChatLog.Size = new System.Drawing.Size(460, 440);
+            this.lbChatLog.TabIndex = 2;
+            // 
+            // plMsg
+            // 
+            this.plMsg.BackColor = System.Drawing.Color.LightGray;
+            this.plMsg.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.plMsg.Controls.Add(this.lblId);
+            this.plMsg.Controls.Add(this.txtMsg);
+            this.plMsg.Controls.Add(this.txtId);
+            this.plMsg.Controls.Add(this.lblMsg);
+            this.plMsg.Controls.Add(this.btnSend);
+            this.plMsg.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.plMsg.Location = new System.Drawing.Point(3, 443);
+            this.plMsg.MinimumSize = new System.Drawing.Size(462, 70);
+            this.plMsg.Name = "plMsg";
+            this.plMsg.Size = new System.Drawing.Size(462, 70);
+            this.plMsg.TabIndex = 1;
+            // 
+            // lblId
+            // 
+            this.lblId.AutoSize = true;
+            this.lblId.Location = new System.Drawing.Point(63, 13);
+            this.lblId.Name = "lblId";
+            this.lblId.Size = new System.Drawing.Size(23, 12);
+            this.lblId.TabIndex = 4;
+            this.lblId.Text = "Id :";
+            // 
+            // txtMsg
+            // 
+            this.txtMsg.ImeMode = System.Windows.Forms.ImeMode.Disable;
+            this.txtMsg.Location = new System.Drawing.Point(151, 30);
+            this.txtMsg.Name = "txtMsg";
+            this.txtMsg.Size = new System.Drawing.Size(164, 21);
+            this.txtMsg.TabIndex = 0;
+            this.txtMsg.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtMsg_KeyUp);
+            // 
+            // txtId
+            // 
+            this.txtId.Location = new System.Drawing.Point(65, 30);
+            this.txtId.Name = "txtId";
+            this.txtId.Size = new System.Drawing.Size(67, 21);
+            this.txtId.TabIndex = 3;
+            // 
+            // lblMsg
+            // 
+            this.lblMsg.AutoSize = true;
+            this.lblMsg.Location = new System.Drawing.Point(149, 13);
+            this.lblMsg.Name = "lblMsg";
+            this.lblMsg.Size = new System.Drawing.Size(66, 12);
+            this.lblMsg.TabIndex = 2;
+            this.lblMsg.Text = "Message :";
+            // 
+            // btnSend
+            // 
+            this.btnSend.BackColor = System.Drawing.SystemColors.Control;
+            this.btnSend.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnSend.Location = new System.Drawing.Point(321, 30);
+            this.btnSend.Name = "btnSend";
+            this.btnSend.Size = new System.Drawing.Size(75, 23);
+            this.btnSend.TabIndex = 1;
+            this.btnSend.Text = "Send";
+            this.btnSend.UseVisualStyleBackColor = false;
+            this.btnSend.Click += new System.EventHandler(this.btnSend_Click);
+            // 
+            // tpClients
+            // 
+            this.tpClients.Controls.Add(this.lvConn);
+            this.tpClients.Location = new System.Drawing.Point(4, 22);
+            this.tpClients.Name = "tpClients";
+            this.tpClients.Padding = new System.Windows.Forms.Padding(3);
+            this.tpClients.Size = new System.Drawing.Size(466, 516);
+            this.tpClients.TabIndex = 0;
+            this.tpClients.Text = "접속자 정보";
+            this.tpClients.UseVisualStyleBackColor = true;
+            // 
+            // lvConn
+            // 
+            this.lvConn.CheckBoxes = true;
+            this.lvConn.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.chId,
+            this.chId_Char,
+            this.chIp,
+            this.chTime});
+            this.lvConn.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lvConn.FullRowSelect = true;
+            this.lvConn.Location = new System.Drawing.Point(3, 3);
+            this.lvConn.Name = "lvConn";
+            this.lvConn.Size = new System.Drawing.Size(460, 510);
+            this.lvConn.TabIndex = 0;
+            this.lvConn.UseCompatibleStateImageBehavior = false;
+            this.lvConn.View = System.Windows.Forms.View.Details;
+            // 
+            // chId
+            // 
+            this.chId.Text = "Index";
+            // 
+            // chId_Char
+            // 
+            this.chId_Char.Text = "ID";
+            this.chId_Char.Width = 95;
+            // 
+            // chIp
+            // 
+            this.chIp.Text = "IP";
+            this.chIp.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.chIp.Width = 120;
+            // 
+            // chTime
+            // 
+            this.chTime.Text = "접속시간";
+            this.chTime.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.chTime.Width = 172;
+            // 
+            // tpInfo
+            // 
+            this.tpInfo.Controls.Add(this.rtbInfo);
+            this.tpInfo.Location = new System.Drawing.Point(4, 22);
+            this.tpInfo.Name = "tpInfo";
+            this.tpInfo.Size = new System.Drawing.Size(466, 516);
+            this.tpInfo.TabIndex = 2;
+            this.tpInfo.Text = "접속 정보";
+            this.tpInfo.UseVisualStyleBackColor = true;
+            // 
+            // rtbInfo
+            // 
+            this.rtbInfo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.rtbInfo.Location = new System.Drawing.Point(0, 0);
+            this.rtbInfo.Name = "rtbInfo";
+            this.rtbInfo.Size = new System.Drawing.Size(466, 516);
+            this.rtbInfo.TabIndex = 0;
+            this.rtbInfo.Text = "";
+            // 
+            // tsToolSctip
+            // 
+            this.tsToolSctip.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
+            this.tsToolSctip.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.tsToolSctip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.btnServer,
+            this.btnSet,
+            this.toolStripSeparator1,
+            this.btnSaveLog,
+            this.btnLoadLog,
+            this.btnSetDate});
+            this.tsToolSctip.Location = new System.Drawing.Point(0, 0);
+            this.tsToolSctip.Name = "tsToolSctip";
+            this.tsToolSctip.Size = new System.Drawing.Size(498, 27);
+            this.tsToolSctip.TabIndex = 1;
+            this.tsToolSctip.Text = "toolStrip1";
+            // 
+            // btnServer
+            // 
+            this.btnServer.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.btnServer.Image = global::Server_Program.Properties.Resources.Disconnected;
+            this.btnServer.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnServer.Name = "btnServer";
+            this.btnServer.Size = new System.Drawing.Size(24, 24);
+            this.btnServer.Text = "Server Start";
+            this.btnServer.Click += new System.EventHandler(this.btnServer_Click);
+            // 
+            // btnSet
+            // 
+            this.btnSet.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.btnSet.Image = global::Server_Program.Properties.Resources.setting;
+            this.btnSet.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnSet.Name = "btnSet";
+            this.btnSet.Size = new System.Drawing.Size(24, 24);
+            this.btnSet.Text = "Network Setting";
+            this.btnSet.Click += new System.EventHandler(this.btnSet_Click);
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 27);
+            // 
+            // btnSaveLog
+            // 
+            this.btnSaveLog.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.btnSaveLog.Image = global::Server_Program.Properties.Resources.SaveIcon;
+            this.btnSaveLog.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnSaveLog.Name = "btnSaveLog";
+            this.btnSaveLog.Size = new System.Drawing.Size(24, 24);
+            this.btnSaveLog.Text = "Save Log";
+            this.btnSaveLog.Click += new System.EventHandler(this.btnSaveLog_Click);
+            // 
+            // btnLoadLog
+            // 
+            this.btnLoadLog.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.btnLoadLog.Image = global::Server_Program.Properties.Resources.loadIcon;
+            this.btnLoadLog.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnLoadLog.Name = "btnLoadLog";
+            this.btnLoadLog.Size = new System.Drawing.Size(24, 24);
+            this.btnLoadLog.Text = "Load Log";
+            this.btnLoadLog.Click += new System.EventHandler(this.btnLoadLog_Click);
+            // 
+            // btnSetDate
+            // 
+            this.btnSetDate.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.btnSetDate.Image = global::Server_Program.Properties.Resources.setting;
+            this.btnSetDate.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnSetDate.Name = "btnSetDate";
+            this.btnSetDate.Size = new System.Drawing.Size(24, 24);
+            this.btnSetDate.Text = "Date Setting";
+            this.btnSetDate.Click += new System.EventHandler(this.btnSetDate_Click);
+            // 
+            // ServerForm
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(498, 586);
+            this.Controls.Add(this.tsToolSctip);
+            this.Controls.Add(this.tcTab);
+            this.MaximumSize = new System.Drawing.Size(514, 1998);
+            this.MinimumSize = new System.Drawing.Size(514, 582);
+            this.Name = "ServerForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "채팅방 서버";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ServerForm_FormClosing);
+            this.Load += new System.EventHandler(this.Form1_Load);
+            this.LocationChanged += new System.EventHandler(this.ServerForm_LocationChanged);
+            this.SizeChanged += new System.EventHandler(this.Form1_SizeChanged);
+            this.tcTab.ResumeLayout(false);
+            this.tpChatLog.ResumeLayout(false);
+            this.plMsg.ResumeLayout(false);
+            this.plMsg.PerformLayout();
+            this.tpClients.ResumeLayout(false);
+            this.tpInfo.ResumeLayout(false);
+            this.tsToolSctip.ResumeLayout(false);
+            this.tsToolSctip.PerformLayout();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.TabControl tcTab;
+        private System.Windows.Forms.TabPage tpClients;
+        private System.Windows.Forms.TabPage tpChatLog;
+        private System.Windows.Forms.Panel plMsg;
+        private System.Windows.Forms.Label lblMsg;
+        private System.Windows.Forms.Button btnSend;
+        private System.Windows.Forms.TextBox txtMsg;
+        private System.Windows.Forms.Label lblId;
+        private System.Windows.Forms.MaskedTextBox txtId;
+        private System.Windows.Forms.ListBox lbChatLog;
+        private System.Windows.Forms.ToolStrip tsToolSctip;
+        private System.Windows.Forms.ToolStripButton btnServer;
+        private System.Windows.Forms.ToolStripButton btnSet;
+        private System.Windows.Forms.ListView lvConn;
+        private System.Windows.Forms.ColumnHeader chId;
+        private System.Windows.Forms.ColumnHeader chIp;
+        private System.Windows.Forms.ColumnHeader chTime;
+        private System.Windows.Forms.TabPage tpInfo;
+        private System.Windows.Forms.RichTextBox rtbInfo;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.ToolStripButton btnSaveLog;
+        private System.Windows.Forms.ToolStripButton btnLoadLog;
+        private System.Windows.Forms.ToolStripButton btnSetDate;
+        private System.Windows.Forms.ColumnHeader chId_Char;
+    }
+}
+
